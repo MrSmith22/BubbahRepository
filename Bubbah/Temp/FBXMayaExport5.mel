@@ -1,0 +1,22 @@
+print "Starting maya loading and fbx conversion \n";
+	
+if (`file -q -exists "/Users/Jason/Documents/Unity/BubbahRepository/Bubbah/Assets/Water/StylizedWater/Models/TugBoat.mb"`)
+{		
+	file -o "/Users/Jason/Documents/Unity/BubbahRepository/Bubbah/Assets/Water/StylizedWater/Models/TugBoat.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "/Users/Jason/Documents/Unity/BubbahRepository/Bubbah/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+sysFile -delete "/Users/Jason/Documents/Unity/BubbahRepository/Bubbah/Temp/CommandPipe";
+
+$donepipeKill = `fopen "/Users/Jason/Documents/Unity/BubbahRepository/Bubbah/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;
