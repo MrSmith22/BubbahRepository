@@ -6,10 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: StylizedWater
-  m_Shader: {fileID: 4800000, guid: 1dcaa891fd50ac749a178732c0268a03, type: 3}
-  m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_Name: fishing_boat
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
@@ -48,19 +48,13 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 875110761, guid: e3d849a71cf1896458f0932f079b66a3, type: 3}
+        m_Texture: {fileID: 2800000, guid: ca3d65636ffba44baa7489cf55f2dd02, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Normals
-      second:
-        m_Texture: {fileID: 875110761, guid: e3d849a71cf1896458f0932f079b66a3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -75,12 +69,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Shadermap
-      second:
-        m_Texture: {fileID: -162312740, guid: e3d849a71cf1896458f0932f079b66a3, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _BumpScale
@@ -89,20 +77,11 @@ Material:
         name: _Cutoff
       second: 0.5
     - first:
-        name: _Depth
-      second: 11.8
-    - first:
-        name: _Depthdarkness
-      second: 1
-    - first:
         name: _DetailNormalMapScale
       second: 1
     - first:
         name: _DstBlend
       second: 0
-    - first:
-        name: _Fresnelexponent
-      second: 4
     - first:
         name: _GlossMapScale
       second: 1
@@ -125,15 +104,6 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
-        name: _RimSize
-      second: 2
-    - first:
-        name: _Rimfalloff
-      second: 0.25
-    - first:
-        name: _Rimtiling
-      second: 2
-    - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
@@ -143,28 +113,7 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
-        name: _SurfaceHighlight
-      second: 0.983
-    - first:
-        name: _SurfaceHightlighttiling
-      second: 0.25
-    - first:
-        name: _Surfacehightlightsize
-      second: 1
-    - first:
-        name: _Tiling
-      second: 0.233
-    - first:
-        name: _Transparency
-      second: 0.75
-    - first:
         name: _UVSec
-      second: 0
-    - first:
-        name: _Wavesspeed
-      second: 0.75
-    - first:
-        name: _Worldspacetiling
       second: 0
     - first:
         name: _ZWrite
@@ -176,12 +125,3 @@ Material:
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _FresnelColor
-      second: {r: 0.2104239, g: 0.6190403, b: 1, a: 0.5019608}
-    - first:
-        name: _RimColor
-      second: {r: 0.6787954, g: 0.94069916, b: 0.99264705, a: 1}
-    - first:
-        name: _WaterColor
-      second: {r: 0.1544118, g: 0.61511165, b: 1, a: 1}
