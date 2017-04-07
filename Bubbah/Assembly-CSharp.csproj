@@ -52,6 +52,7 @@
      <Compile Include="Assets\Water\StylizedWater\Scripts\StylizedWaterInspector.cs" />
      <None Include="Assets\Water\StylizedWater\Shaders\StylizedWater_mobile_advanced.shader" />
      <None Include="Assets\Water\StylizedWater\Changelog.txt" />
+     <None Include="Assets\Cartoon Textures\README.txt" />
      <None Include="Assets\Water\StylizedWater\Shaders\StylizedWater_mobile_basic.shader" />
      <None Include="Assets\Water\StylizedWater\Shaders\StylizedWater_desktop.shader" />
      <None Include="Assets\Water\StylizedWater\Shaders\StylizedWater_desktop_tesselation.shader" />
