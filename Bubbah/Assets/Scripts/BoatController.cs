@@ -56,7 +56,7 @@ public class BoatController : MonoBehaviour {
 				Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
 				myTransform.rotation = targetRotation;
 			}
-			//	myTransform.position = Vector3.MoveTowards(myTransform.position, destinationPosition, moveSpeed * Time.deltaTime);
+				//myTransform.position = Vector3.MoveTowards(myTransform.position, destinationPosition, moveSpeed * Time.deltaTime);
 		}
 
 		// To prevent code from running if not needed
